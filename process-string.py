@@ -24,12 +24,8 @@ for i in range(len(input)):
 #solution
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 user_range = input("Enter a range of letters (e.g., a-z): ")
-def expand_letter_range(letter_range):
-    start, end = letter_range.split('-')
-    if start.isupper():
-        return ''.join(chr(i) for i in range(ord(start), ord(end) + 1)).upper()
-    else:
-        return ''.join(chr(i) for i in range(ord(start), ord(end) + 1))
-
-result = expand_letter_range(user_range)
-print(result)
+start, end = user_range.split('-')
+start.isupper()
+alphabet = ''.join(chr(i) for i in range(ord(start), ord(end) + 1)).upper()
+alphabet = ''.join(chr(i) for i in range(ord(start), ord(end) + 1))
+print(alphabet)
